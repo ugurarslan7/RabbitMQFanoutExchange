@@ -5,7 +5,12 @@ class Program
 {
     static void Main(string[] args)
     {
-        var factory = new ConnectionFactory();
+        ConnectionFactory factory = new ConnectionFactory();
+        //factory.HostName = "localhost";
+        //factory.VirtualHost = "/";
+        //factory.Port = 5672;
+        //factory.UserName = "guest";
+        //factory.Password = "guest";
 
         factory.Uri = new Uri("amqps://jcabnccy:j5e8IUxSyGYiI93gEH0wYlJhfsuPNbQk@stingray.rmq.cloudamqp.com/jcabnccy");
 
